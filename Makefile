@@ -1,4 +1,4 @@
-DOTFILES := .tmux.conf .vimrc
+DOTFILES := .tmux.conf .vimrc .gitconfig
 PWD := $(shell pwd)
 
 .PHONY: list clean install

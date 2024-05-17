@@ -1,0 +1,7 @@
+[user]
+	name = gz
+	email = jinlizhong@smail.nju.edu.cn
+[core]
+	editor = vim
+[alias]
+	graph = log --all --graph --decorate --oneline
