@@ -28,7 +28,7 @@ set relativenumber
 set laststatus=2
 
 " control behavior of tab and indent
-set expandtab
+" set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
