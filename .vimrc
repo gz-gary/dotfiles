@@ -77,5 +77,6 @@ set noundofile
 
 set runtimepath+=~/.vim/pack/plugins/start/nerdtree
 set runtimepath+=~/.vim/pack/plugins/start/ctrlp
+set runtimepath+=~/.vim/pack/plugins/start/vim-airline
 
 """""""""""""""""""""""""
