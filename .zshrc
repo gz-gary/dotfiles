@@ -99,3 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Utility alias
+
+alias mv="mv -i"
+alias mkdir="mkdir -p"
+alias py="python"
+alias ..="cd .."
+alias vi=vim
