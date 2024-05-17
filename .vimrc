@@ -66,3 +66,8 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" never create swap file
+set nobackup
+set noswapfile
+set nowritebackup
+set noundofile
