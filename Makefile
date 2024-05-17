@@ -21,6 +21,7 @@ install: install-vim-plugins clean $(DOTFILES)
 	done
 	
 install-vim-plugins:
+	@echo "Installing vim plugins"
 	@rm -rf "$(HOME)/.vim"
 	@ln -s "$(PWD)/.vim" "$(HOME)/.vim"
 
