@@ -1,7 +1,7 @@
 DOTFILES := .tmux.conf .vimrc .gitconfig .zshrc
 PWD := $(shell pwd)
 
-.PHONY: list clean install
+.PHONY: list clean install install-vim-plugins
 
 list: $(DOTFILES)
 	@for file in $(DOTFILES); do \
@@ -14,8 +14,13 @@ clean: $(DOTFILES)
 		rm -rf $(HOME)/$$file; \
 	done
 	
-install: clean $(DOTFILES)
+install: install-vim-plugins clean $(DOTFILES)
 	@for file in $(DOTFILES); do \
 		echo "Installing $(HOME)/$$file"; \
 		ln -s "$(PWD)/$$file" "$(HOME)/$$file"; \
 	done
+	
+install-vim-plugins:
+	@rm -rf "$(HOME)/.vim"
+	@ln -s "$(PWD)/.vim" "$(HOME)/.vim"
+

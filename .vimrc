@@ -71,3 +71,10 @@ set nobackup
 set noswapfile
 set nowritebackup
 set noundofile
+
+"""""""""""""""""""""""""
+" Here are plugins config
+
+set runtimepath+=~/.vim/pack/plugins/start/nerdtree
+
+"""""""""""""""""""""""""
