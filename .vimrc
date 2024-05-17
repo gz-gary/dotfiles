@@ -76,5 +76,6 @@ set noundofile
 " Here are plugins config
 
 set runtimepath+=~/.vim/pack/plugins/start/nerdtree
+set runtimepath+=~/.vim/pack/plugins/start/ctrlp
 
 """""""""""""""""""""""""
