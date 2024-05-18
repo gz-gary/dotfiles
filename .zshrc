@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Utility alias
+# Common aliases
 
 alias mv="mv -i"
 alias mkdir="mkdir -p"
@@ -108,3 +108,9 @@ alias py="python"
 alias du="du -h"
 alias ..="cd .."
 alias vi=vim
+
+# Platforms-dependent configuration
+
+if [ -f ~/.zshrc_local ]; then
+	source ~/.zshrc_local
+fi
