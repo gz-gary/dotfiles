@@ -1,7 +1,7 @@
 DOTFILES := .tmux.conf .vimrc .gitconfig .zshrc
 PWD := $(shell pwd)
 
-.PHONY: list clean install install-vim-plugins
+.PHONY: list clean install install-vim-plugins install-zsh-plugins
 
 list: $(DOTFILES)
 	@for file in $(DOTFILES); do \
@@ -30,3 +30,7 @@ install-ssh-client-config:
 	@rm -rf "$(HOME)/.ssh/config"
 	@ln -s "$(PWD)/.ssh/config" "$(HOME)/.ssh/config"
 	
+install-zsh-plugins:
+	@echo "Installing zsh plugins"
+	@ln -s "$(PWD)/.oh-my-zsh/plugins/zsh-autosuggestions" "$(HOME)/.oh-my-zsh/plugins/zsh-autosuggestions"
+	@ln -s "$(PWD)/.oh-my-zsh/plugins/zsh-syntax-highlighting" "$(HOME)/.oh-my-zsh/plugins/zsh-syntax-highlighting"
