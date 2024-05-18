@@ -25,3 +25,8 @@ install-vim-plugins:
 	@rm -rf "$(HOME)/.vim"
 	@ln -s "$(PWD)/.vim" "$(HOME)/.vim"
 
+install-ssh-client-config:
+	@echo "Installing ssh configuration"
+	@rm -rf "$(HOME)/.ssh/config"
+	@ln -s "$(PWD)/.ssh/config" "$(HOME)/.ssh/config"
+	
