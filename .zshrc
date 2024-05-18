@@ -105,5 +105,6 @@ source $ZSH/oh-my-zsh.sh
 alias mv="mv -i"
 alias mkdir="mkdir -p"
 alias py="python"
+alias du="du -h"
 alias ..="cd .."
 alias vi=vim
