@@ -13,3 +13,6 @@
 [submodule ".oh-my-zsh/plugins/zsh-autosuggestions"]
 	path = .oh-my-zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".vim/pack/plugins/start/vim-sleuth"]
+	path = .vim/pack/plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
