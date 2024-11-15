@@ -18,6 +18,7 @@ fetch-deps:
 	@echo "Cloning plugins..."
 	@echo "Cloning Vim plugins..."
 	@echo "Cloning nerdtree..."
+	@mkdir -p .vim/pack/plugins/start
 	@cd .vim/pack/plugins/start && git clone https://github.com/preservim/nerdtree.git
 	@echo "Cloning ctrlp..."
 	@cd .vim/pack/plugins/start && git clone https://github.com/ctrlpvim/ctrlp.vim.git
@@ -27,6 +28,7 @@ fetch-deps:
 	@cd .vim/pack/plugins/start && git clone https://github.com/morhetz/gruvbox
 	@echo "Cloning zsh plugins..."
 	@echo "Cloning zsh-syntax-highlighting..."
+	@mkdir -p .oh-my-zsh/plugins
 	@cd .oh-my-zsh/plugins && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 	@echo "Cloning zsh-autosuggestions..."
 	@cd .oh-my-zsh/plugins && git clone https://github.com/zsh-users/zsh-autosuggestions.git
